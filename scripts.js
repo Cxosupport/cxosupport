@@ -1,4 +1,5 @@
-// scripts.js
-document.addEventListener("DOMContentLoaded", function () {
-    // Example of simple interactivity you could add in the future.
+// Example script to animate certain page elements (if needed)
+document.addEventListener("DOMContentLoaded", function() {
+    const hero = document.querySelector('#hero h2');
+    hero.classList.add('fade-in');
 });
