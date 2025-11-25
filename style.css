@@ -1,160 +1,116 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
+/* Navbar */
 header {
-    background-color: #003366;
+    background-color: #0a4f85;
     color: white;
-    padding: 20px 0;
+    padding: 1rem 2rem;
 }
 
-header h1 {
-    margin-left: 20px;
-}
-
-header nav ul {
+.nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
+.nav-links li {
+    margin-left: 1.5rem;
 }
 
-header nav ul li a {
+.nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Hero Section */
-#hero {
-    background: url('images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 100px 0;
-    color: white;
-    text-align: center;
-}
-
-#hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 1.2rem;
-}
-
-/* Services Section */
-#services {
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-#services h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.service-item {
-    text-align: center;
-}
-
-.service-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.service-item h3 {
-    margin-top: 10px;
+.logo {
+    float: left;
     font-size: 1.5rem;
-}
-
-/* Testimonials Section */
-#testimonials {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-}
-
-.testimonial {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial blockquote {
-    font-style: italic;
-    font-size: 1.2rem;
-}
-
-.testimonial p {
-    text-align: right;
     font-weight: bold;
 }
 
-/* Contact Section */
-#contact {
-    padding: 50px 0;
+/* Hero Section */
+.hero, .about-hero, .services-hero, .contact-hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 4rem 2rem;
 }
 
-form {
+.hero h1, .about-hero h1, .services-hero h1, .contact-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p, .about-hero p, .services-hero p, .contact-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #0a4f85;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features / Services */
+.features, .service-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
 }
 
-form label {
-    margin-top: 10px;
+.feature, .service-item {
+    flex: 1 1 250px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #e1eaf1;
+    border-radius: 8px;
+    text-align: center;
 }
 
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-form button {
-    background-color: #003366;
+.contact-form button {
+    background-color: #0a4f85;
     color: white;
+    padding: 0.7rem 1.5rem;
     border: none;
-    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-}
-
-form button:hover {
-    background-color: #005599;
 }
 
 /* Footer */
 footer {
-    background-color: #003366;
+    background-color: #0a4f85;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
