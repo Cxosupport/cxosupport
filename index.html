@@ -10,10 +10,12 @@
     <header>
         <nav>
             <div class="logo">CxOSupport</div>
-            <ul class="nav-links">
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -21,29 +23,31 @@
 
     <!-- Hero Section -->
     <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1581092334527-6d61c8477460?auto=format&fit=crop&w=1470&q=80');">
-        <h1>Global Accounting, Taxation, Legal & HR Solutions</h1>
-        <p>Helping businesses thrive across the globe with expert support.</p>
-        <a href="contact.html" class="btn">Get Started</a>
+        <div class="hero-content">
+            <h1 class="fade-in">Global Accounting, Taxation, Legal & HR Solutions</h1>
+            <p class="fade-in delay-1">Helping businesses thrive across the globe with expert support.</p>
+            <a href="contact.html" class="btn fade-in delay-2">Get Started</a>
+        </div>
     </section>
 
     <!-- Features Section -->
     <section class="features">
-        <div class="feature">
+        <div class="feature fade-up">
             <img src="https://images.unsplash.com/photo-1581091012184-b3cfdb2f6c2c?auto=format&fit=crop&w=500&q=80" alt="Accounting" class="service-img">
             <h2>Accounting</h2>
             <p>Accurate bookkeeping, financial reporting, and compliance solutions worldwide.</p>
         </div>
-        <div class="feature">
+        <div class="feature fade-up delay-1">
             <img src="https://images.unsplash.com/photo-1600285172597-1b20b86f0f40?auto=format&fit=crop&w=500&q=80" alt="Taxation" class="service-img">
             <h2>Taxation</h2>
             <p>Expert tax advisory and filing services across multiple jurisdictions.</p>
         </div>
-        <div class="feature">
+        <div class="feature fade-up delay-2">
             <img src="https://images.unsplash.com/photo-1591361975413-60c6b8e7b9b1?auto=format&fit=crop&w=500&q=80" alt="Legal" class="service-img">
             <h2>Legal</h2>
             <p>Business law, contracts, and corporate governance services globally.</p>
         </div>
-        <div class="feature">
+        <div class="feature fade-up delay-3">
             <img src="https://images.unsplash.com/photo-1573495612937-cf8fef911d0b?auto=format&fit=crop&w=500&q=80" alt="HR Services" class="service-img">
             <h2>HR Services</h2>
             <p>Payroll, recruitment, and HR compliance support for international teams.</p>
@@ -53,5 +57,7 @@
     <footer>
         <p>&copy; 2025 CxOSupport. All Rights Reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
